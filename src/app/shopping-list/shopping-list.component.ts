@@ -1,5 +1,5 @@
-import { ShoppingListService } from 'app/shopping-list/shopping-list.service';
-import { Ingredient } from './../shared/ingredient.model';
+import { ShoppingListService } from './shopping-list.service';
+import { Ingredient } from '../shared/ingredient.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

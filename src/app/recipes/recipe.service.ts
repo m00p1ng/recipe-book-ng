@@ -1,4 +1,4 @@
-import { ShoppingListService } from 'app/shopping-list/shopping-list.service';
+import { ShoppingListService } from '../shopping-list/shopping-list.service';
 import { Ingredient } from './../shared/ingredient.model';
 import { EventEmitter, Injectable } from '@angular/core';
 
@@ -33,6 +33,10 @@ export class RecipeService {
 
   getRecipes() {
     return this.recipes.slice();
+  }
+
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
